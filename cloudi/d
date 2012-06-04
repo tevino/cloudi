@@ -4,11 +4,11 @@
 import urllib2
 import sys
 import os
-from cache import Cache
 import platform
 from HTMLParser import HTMLParser
 import json
-from color import lgreen, dgreen, white, lgreen_s, ed, red
+from cloudi.cache import Cache
+from cloudi.color import lgreen, dgreen, white, lgreen_s, ed, red
 
 
 def get_clip():

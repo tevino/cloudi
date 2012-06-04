@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
+import os
 import shelve
-import os.path
 
-currentdir = sys.path[0]
-cache_file = os.path.join(currentdir, '.cache.db')
+cache_file = os.path.join(os.getenv('HOME'), '.cloudi_cache.db')
 
 
 class Cache:

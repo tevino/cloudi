@@ -23,9 +23,8 @@ Dependencies
 
 Installation Instructions
 -------------------------
-if you use bash::
 
-    $ sh install.sh
+    $ pip install cloudi
 
 or you should know what to do with ``install.sh``
 

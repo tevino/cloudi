@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-ed = u'\033[0m'
-
 red_s = u'\033[0;31m'
 lgreen_s = u'\033[1;32m'
 dgreen_s = u'\033[0;32m'
 white_s = u'\033[1m'
+
+ed = u'\033[0m'
 
 
 def rig(st, s):
