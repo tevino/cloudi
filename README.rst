@@ -18,7 +18,7 @@ Dependencies
 
     python 2.6+
 
-    ``xsel`` is needed for clipboard access
+    ``xsel`` is needed for "clipboard" access
 
 
 Installation Instructions
@@ -48,7 +48,7 @@ or::
 
     $ d "Thanksgiving Day"
 
-If you do not specify what to query, Cloudi will get a word from your clipboard.
+If you do not specify what to query, Cloudi will get a word from your "clipboard".
 In this case, all you need is::
 
     $ d
