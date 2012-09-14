@@ -72,7 +72,7 @@ def print_result(dct):
         des += '\n'
     sents = ''
     for sent in local.get('sen', []):
-        s_type = sent['p']
+        s_type = sent.get('p', '')
         sents += s_type + '\n'
         for s in sent['s']:
             sents += '  %s\n' % s['es'].replace('<b>', lgreen_s).replace('</b>', ed)
