@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='cloudi',
-    version='0.4.0',
+    version='0.4.1',
     author='Tevin Zhang',
     author_email='mail2tevin@gmail.com',
     packages=['cloudi', ],
