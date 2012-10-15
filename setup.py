@@ -7,7 +7,7 @@ setup(
     author_email='mail2tevin@gmail.com',
     packages=['cloudi', ],
     scripts=['cloudi/d', ],
-    url='https://github.com/Tevino/cloudi',
+    url='https://github.com/tevino/cloudi',
     license='MIT',
     description='Convenient online En<->Zh dictionary for command line users.',
     long_description=open('README').read(),
