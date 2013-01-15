@@ -10,5 +10,5 @@ setup(
     url='https://github.com/tevino/cloudi',
     license='MIT',
     description='Convenient online En<->Zh dictionary for command line users.',
-    long_description=open('README').read(),
+    long_description=open('README.rst').read(),
 )
