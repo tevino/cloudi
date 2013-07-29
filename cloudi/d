@@ -24,6 +24,10 @@ def get_clip():
         win32clipboard.OpenClipboard()
         clip = win32clipboard.GetClipboardData()
         win32clipboard.CloseClipboard()
+    elif pf.startswith('DARWIN'):
+        outf = os.popen('pbpaste', 'r')
+        clip = outf.read()
+        outf.close()
     return clip
 
 
