@@ -14,7 +14,9 @@ from cloudi.color import lgreen, dgreen, white, lgreen_s, ed, red
 def get_clip():
     pf = platform.system().upper()
     if pf.startswith('LINUX'):
-        clip = os.popen('xsel').read()
+        xsel = os.popen('xsel')
+        clip = xsel.read()
+        xsel.close()
     elif pf.startswith('CYGWIN'):
         with open('/dev/clipboard') as clipboard:
             clip = clipboard.read()
