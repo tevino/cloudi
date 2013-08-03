@@ -4,22 +4,22 @@
 import os
 import shelve
 
-cache_file = os.path.join(os.getenv('HOME'), '.cloudi_cache.db')
+cache_path = os.path.join(os.getenv('HOME'), '.cloudi.cache')
 
 
 class Cache:
-    db = shelve.open(cache_file, 'c')
+    c = shelve.open(cache_path, 'c')
 
     @classmethod
     def _is_word_exist(cls, word):
-        return word in cls.db
+        return word in cls.c
 
     @classmethod
     def get_exp(cls, word):
         if cls._is_word_exist(word):
-            return cls.db[word]
+            return cls.c[word]
 
     @classmethod
     def cache_word(cls, word, exp):
         if not cls._is_word_exist(word):
-            cls.db[word] = exp
+            cls.c[word] = exp
