@@ -11,15 +11,15 @@ class Cache:
     c = shelve.open(cache_path, 'c')
 
     @classmethod
-    def _is_word_exist(cls, word):
+    def exists(cls, word):
         return word in cls.c
 
     @classmethod
-    def get_exp(cls, word):
-        if cls._is_word_exist(word):
+    def get(cls, word):
+        if cls.exists(word):
             return cls.c[word]
 
     @classmethod
-    def cache_word(cls, word, exp):
-        if not cls._is_word_exist(word):
+    def set(cls, word, exp):
+        if not cls.exists(word):
             cls.c[word] = exp

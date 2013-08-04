@@ -8,7 +8,7 @@ setup(
     author=cloudi.__author__,
     author_email=cloudi.__email__,
     packages=['cloudi', ],
-    scripts=['cloudi/d', ],
+    scripts=['scripts/d', ],
     url='https://github.com/tevino/cloudi',
-    description='Convenient online EN<->ZH dictionary for command line users.'
+    description='Convenient online EN<->ZH dictionary without other dependences for command line users.'
 )

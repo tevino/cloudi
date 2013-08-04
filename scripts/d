@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+from cloudi.query import query
+
+
+if __name__ == '__main__':
+    word = (''.join([w + ' ' for w in sys.argv[1:]])).strip() if len(sys.argv) > 1 else None
+    query(word, print_out=True)

@@ -1,34 +1,37 @@
 ==========================
-Cloudi - Cloud Dictionary
+cloudi - Cloud Dictionary
 ==========================
 
 
 Summary
 ---------
-``Cloudi`` is a convenient online dictionary for command line users.
+``cloudi`` is a convenient online EN<->ZH dictionary **without other dependences** for command line users.
 
-It can translate between English and Chinese
-
-When you query a word for the first time ``cloudi`` will save the result so there is no need for Internet connection if you query it again.
+``cloudi`` will cache the result every time you use it, so there is no need for Internet connection when you query the same thing again.
 
 
 Dependencies
 ------------
+**You usually already have at least one of the following in your system.**
 
-    python 2.6+
+- ``xclip``
+- ``xsel``
+- ``gtk`` (python library)
+- ``PyQt4``
 
-    ``xsel`` is needed for "clipboard" access
+One of above is needed for accessing clipboard on linux.
 
 
 Installation Instructions
 -------------------------
+Using pip::
 
     $ pip install cloudi
 
 
 Usage
 ------
-The following command query the word 'hello'::
+The following command query the word "hello"::
 
     $ d hello
 
@@ -36,7 +39,7 @@ Chinese are the same::
 
     $ d 你好
 
-phrases are the same, for instance 'Thanksgiving Day'::
+phrases are the same, for instance "Thanksgiving Day"::
 
     $ d Thanksgiving Day
 
@@ -44,7 +47,7 @@ or::
 
     $ d "Thanksgiving Day"
 
-If you do not specify what to query, Cloudi will get a word from your "clipboard".
+If you do not specify what to query, cloudi will query the text in your clipboard.
 In this case, all you need is::
 
     $ d
@@ -52,10 +55,10 @@ In this case, all you need is::
 
 FAQ
 -----
-If your something(e.g. oh-my-zsh) used `d` as a alias for some other use, try::
+If something(e.g. ``oh-my-zsh``) you are using have taken the alias ``d`` , try::
 
     $ unalias d
 
-for oh-my-zsh users::
+for ``oh-my-zsh`` users::
 
     $ echo "unalias d" >> ~/.oh-my-zsh/custom/unalias_cloudi.zsh
