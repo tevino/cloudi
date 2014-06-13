@@ -2,6 +2,9 @@
 cloudi - Cloud Dictionary
 ==========================
 
+This project is based on ``dict.qq.com`` which is closed, so it will not work anymore. 2014-06-13
+==================================================================================================
+
 
 Summary
 ---------
